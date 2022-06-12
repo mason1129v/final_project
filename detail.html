@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/basic.css">
+    <link rel="stylesheet" href="assets/css/detail.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/circle_btn.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/star.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>商品詳細資訊</title>
+</head>
+<body>
+    <header>
+        <div class="list1 header">
+            <div class="logo header"><a href="./index.html">
+                <img src="assets/img/logo.jpg" alt style="width: 100%;">
+            </a></div>
+            <div class="logo1 header"><a href="./index.html">
+                <img src="assets/img/logo1.jpg" alt style="width: 100%;">
+            </a></div>
+        </div>
+        <div class="list2 header">
+            <div class="intro header"> <a href="./intro.html">アカシ簡介 &nbsp;&nbsp;|</a></div>
+            <div class="item header">
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="./product.html">預覽商城 &nbsp;&nbsp;</a></button>|
+                    <div class="dropdown-content">
+                        <a href="./product.html">所有商品</a>
+                        <a href="./product.html#lotte">LOTTE</a>
+                        <a href="./product.html#Glico">Glico</a>
+                        <a href="./product.html#Bourbon">Bourbon</a>
+                        <a href="./product.html#mikakutou">味覺糖</a>
+                        <a href="./product.html#other">其它</a>
+                    </div>
+                </div>
+            </div>
+            <div class="about nav"><a href="./about.html">關於我們 &nbsp;|</a></div>
+            <a href="./member.html"><div class="member header">會員專屬</div></a> <!--要先登入才可點進，未登入則顯示登入畫面--> 
+        </div>  
+        <div class="list3 header">
+            <button class="member1 header" id="click"><img  src="assets/img/member.jpg" alt style="width:100%;"></button>
+            <div id="bg">
+                    <dl>
+                    <dt><a href="#acc1" class="currentBtn">登入會員</a></dt>
+                        <dd id="acc1" class="current">
+                            <form>
+                            <p>登入</p>
+                            
+                                <input  class="text_box" type="text" id="" placeholder="帳號">
+                                <input  class="text_box" type="password" id="" placeholder="密碼">
+                                <div class="btn_group">
+                                <input type="button" class="btn_box" id="login" value="登入">
+                                <input type="button" class="btn_box" value="取消" onclick="location.href='index.html'">
+                            </div>
+                        </form>
+                        </dd>
+                    <dt><a href="#acc2">尚未註冊</a></dt>
+                        <dd id="acc2">
+                            <form>
+                                <p>創立新帳號</p>
+                                    <input  class="text_box" type="text" id="" placeholder="帳號">
+                                    <input  class="text_box" type="text" id="" placeholder="電子信箱">
+                                    <input  class="text_box" type="password" id="" placeholder="密碼">
+                                    <div class="btn_group">
+                                    <input type="button" class="btn_box" id="signin" value="註冊">
+                                    <input type="button" class="btn_box" value="取消" onclick="location.href='index.html'">
+                                    </div>
+                            </form>
+                        </dd>
+                    </dl>
+            </div>
+            <!--登入時人頭換登出鍵 <button class="logout header"><a href=""><img  src="assets/img/log_out.jpg" alt style="width:100%;" ></a></button>-->
+            <!--登出實則跳回首頁-->
+                <input type="text" class="search_text" id="" placeholder="商品検索…">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="all">
+                <div class="zone">
+                    <form method="" action="product.html">
+                        <input type="submit" value="返回/戻る" class="backbtn">
+                    </form>
+                    <div class="wrap_pic">
+                        <div id="detail_mpic">
+                            <ul>
+                                <li><img src="assets/img/koala_black.jpg" alt="img1"></li>
+                                <li><img src="assets/img/koala_black1.jpg" width="1000" height="500" alt="img2"></li>
+                                <li><img src="assets/img/koala_black2.jpg" width="1000" height="500" alt="img3"></li>
+                                <li><img src="assets/img/koala_black3.jpg" width="1000" height="500" alt="img4"></li>
+                            </ul>
+                        </div>
+                        <div id="circle_btn">
+                            <ul>
+                                <li><a href="#" class="target">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail_wrap">
+                        <p class="detail_name_jp">ロッテコアラのマーチ＜Black＞</p>
+                        <p class="detail_name">樂天小熊餅(濃黑巧克力風味)</p>
+                        <div class="detail_info">
+                            <p class="detail_price">30<span class="nt"> NT$</span></p>
+                            <a href="https://www.lotte.co.jp/index.html" class="detail_com" target="_blank"><p class="details">LOTTE</p></a>
+                            <p class="details">泰國産</p>
+                            <p class="details">37G/盒</p>
+                            <p class="details"><span style="text-decoration: underline; font-size:40px;">3</span>則評價</p>
+                        </div>
+                        <div class="tobuy">
+                            <p class="details">庫存量：100</p>
+                            <p class="details">已售出：100</p>
+                            <form method="" action="">
+                                <p class="details">購買數量：<input type="number"  value="1" min="1" max="" name="quantity" class="input_num"></p>
+                                <img src="assets/img/cart.png" class="cart_icon"><input type="submit" onclick="" value="加入購物車" class="put_in_cart">
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="long">
+                    <div class="cmt">
+                        <p class="r_title">顧客評價<span class="r_title_jp">お客様のコメント</span></p>
+                        <div class="cmt_show">
+                            <div class="cmt_sqr">
+                                <span class="cmt_name">路人甲</span>
+                                <span class="cmt_name">|</span>
+                                <span class="cmt_name">2022-05-31</span>
+                                <span class="cmt_name">|</span>
+                                <span class="cmt_name">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+                                <div class="suggestion">留言測試</div>      
+                                <hr class="cmt_hr">                 
+                            </div>
+                            <div class="cmt_sqr">
+                                <span class="cmt_name">路人乙</span>
+                                <span class="cmt_name">|</span>
+                                <span class="cmt_name">2022-05-31</span>
+                                <span class="cmt_name">|</span>
+                                <span class="cmt_name">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+                                <div class="suggestion">留<br>言<br>測<br>試</div>      
+                                <hr class="cmt_hr">                 
+                            </div>
+                            <div class="cmt_sqr">
+                                <span class="cmt_name">路人丙</span>
+                                <span class="cmt_name">|</span>
+                                <span class="cmt_name">2022-05-31</span>
+                                <span class="cmt_name">|</span>
+                                <span class="cmt_name">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+                                <div class="suggestion">留<br>言<br>測<br>試<br>再<br>一<br>次</div>      
+                                <hr class="cmt_hr">     
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="write_cmt">
+                        <p class="rr_title">留言<span class="r_title_jp">コメントする</span></p>
+                        <form method="" action="" id="addcmt" class="cmt_area">
+                            <p class="cmt_name">姓名：<input type="text" id="name" name="name" form="addcmt" placeholder="輸入姓名" class="input_n" required></p>
+                            <div class="star" id="submit_stars" onmousemove="move(event,0)" onclick="move(event,1)" onmouseout="move(event,0)">
+                                <div class="empty_star">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+                                <div class="full_star" id="full_star">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+                                <input type="text" id="full_star_value" name="star" value="1" style="display:none;">
+                            </div>
+                            <p class="cmt_name">評價内容：</p>
+                            <textarea id="comment" name="comment" form="addcmt" placeholder="輸入評價" required class="input_c"></textarea>
+                            <input type="submit" class="input_s" value="送出">
+                        </form>
+                    </div>
+                    <hr class="long">
+                    <div class="recommend">
+                        <p class="r_title">推薦商品<span class="r_title_jp">おすすめ</span></p>
+                        <div class="wrap_rcm">
+                            <form method="" action="">
+                                <div class="area">
+                                    <input type="image" src="assets/img/almond_crisp.jpg" class="img_rcm">
+                                    <p class="pn_p"><input type="submit" value="脆心杏仁可可球" class="product_name"></p>
+                                </div>
+                            </form>
+                            <form method="" action="">
+                                <div class="area">
+                                    <input type="image" src="assets/img/calbee_nori.jpg" class="img_rcm">
+                                    <p class="pn_p"><input type="submit" value="Calbee海苔鹽洋芋片" class="product_name"></p>
+                                </div>
+                            </form>
+                            <form method="" action="">
+                                <div class="area">
+                                    <input type="image" src="assets/img/fettu_grape.jpg" class="img_rcm">
+                                    <p class="pn_p"><input type="submit" value="葡萄味長條軟糖" class="product_name"></p>
+                                </div>
+                            </form>
+                            <form method="" action="">
+                                <div class="area">
+                                    <input type="image" src="assets/img/pocky_macha.jpg" class="img_rcm">
+                                    <p class="pn_p"><input type="submit" value="Pocky(抹茶)" class="product_name"></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--購物車-->
+        <section>
+            <button class="cart_btn" id="cart_btn"><img src="assets/img/cart.png" class="btn_img"></button>
+            <div class="cart_show" id="cart_show">
+                <p class="cart_title">購物車</p><span id="cart_close">&times;</span>
+                <!--尚未登入會員時顥示-->
+                <!--<p class="cart_alert">尚未登入會員</p> -->
+                <form action="">
+                    <div class="wrap_orders">
+                        <div class="each_order">
+                            <div class="cart_img"><img src="assets/img/fettu_lemon.jpg"> </div>
+                            <div class="cart_info">
+                                <p>品名：檸檬味長條軟糖</p>
+                                <p>價錢：49 NT$</p>
+                                <p>數量：<input type="number"  value="2" min="1" max="" name="quantity" class="cart_num"></p>
+                                <p>小計：98 NT$</p>
+                                <form method="" action="">
+                                    <input type="submit" name="delete" class="del_btn" value="刪除">
+                                </form>
+                            </div>
+                            <hr class="cart_hr">
+                        </div>
+                        <div class="each_order">
+                            <div class="cart_img"><img src="assets/img/puccho_melon.jpg"> </div>
+                            <div class="cart_info">
+                                <p>品名：普超條糖(哈蜜瓜蘇打)</p>
+                                <p>價錢：55 NT$</p>
+                                <p>數量：<input type="number"  value="1" min="1" max="" name="quantity" class="cart_num"></p>
+                                <p>小計：55 NT$</p>
+                                <form method="" action="">
+                                    <input type="submit" name="delete" class="del_btn" value="刪除">
+                                </form>
+                            </div>
+                            <hr class="cart_hr">
+                        </div>
+                        <div class="cart_total">
+                            <span>總金額：153 NT$</span><span><input type="button" onclick="location.href='./order.html'" value="前往確認訂單頁面" class="to_check"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="last_container">
+            <div class="lastbox">
+                <div class="lastrow1">
+                    <img src="assets/img/logo.jpg" alt style="width: 100%;"> 
+                </div>
+                <div class="lastrow2">
+                    <img src="assets/img/logo1.jpg" alt style="width: 100%;">
+                </div>
+                <div class="lastrow3">
+                    <div class="foottitle">
+                        連絡先 .
+                    </div>
+                    <div class="footdetail">
+                        <a href="mailto:doris91010114@gmail.com?subject=我的建議">
+                            聯絡我們↗</a><br><br>
+                        <a href="./about.html">關於我們↗</a>
+                        <br><br>TEL:+886-3-218-8080
+                    </div>
+                </div>
+            </div>
+            <hr >
+            <div class="copyright">
+                Copyright©&nbsp;2022 CYIM Right.
+                <br>
+                網頁預覽人數:80人
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

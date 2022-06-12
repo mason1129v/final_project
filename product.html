@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/basic.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <title>商品頁面</title>
+</head>
+<body>
+    <header>
+        <div class="list1 header">
+            <div class="logo header"><a href="./index.html">
+                <img src="assets/img/logo.jpg" alt style="width: 100%;">
+            </a></div>
+            <div class="logo1 header"><a href="./index.html">
+                <img src="assets/img/logo1.jpg" alt style="width: 100%;">
+            </a></div>
+        </div>
+        <div class="list2 header">
+            <div class="intro header"> <a href="./intro.html">アカシ簡介 &nbsp;&nbsp;|</a></div>
+            <div class="item header">
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="./product.html">預覽商城 &nbsp;&nbsp;</a></button>|
+                    <div class="dropdown-content">
+                        <a href="./product.html">所有商品</a>
+                        <a href="./product.html#lotte">LOTTE</a>
+                        <a href="./product.html#Glico">Glico</a>
+                        <a href="./product.html#Bourbon">Bourbon</a>
+                        <a href="./product.html#mikakutou">味覺糖</a>
+                        <a href="./product.html#other">其它</a>
+                    </div>
+                </div>
+            </div>
+            <div class="about nav"><a href="./about.html">關於我們 &nbsp;|</a></div>
+            <a href="./member.html"><div class="member header">會員專屬</div></a> <!--要先登入才可點進，未登入則顯示登入畫面--> 
+        </div>  
+        <div class="list3 header">
+            <button class="member1 header" id="click"><img  src="assets/img/member.jpg" alt style="width:100%;"></button>
+            <div id="bg">
+                    <dl>
+                    <dt><a href="#acc1" class="currentBtn">登入會員</a></dt>
+                        <dd id="acc1" class="current">
+                            <form>
+                            <p>登入</p>
+                            
+                                <input  class="text_box" type="text" id="" placeholder="帳號">
+                                <input  class="text_box" type="password" id="" placeholder="密碼">
+                                <div class="btn_group">
+                                <input type="button" class="btn_box" id="login" value="登入">
+                                <input type="button" class="btn_box" value="取消" onclick="location.href='index.html'">
+                            </div>
+                        </form>
+                        </dd>
+                    <dt><a href="#acc2">尚未註冊</a></dt>
+                        <dd id="acc2">
+                            <form>
+                                <p>創立新帳號</p>
+                                    <input  class="text_box" type="text" id="" placeholder="帳號">
+                                    <input  class="text_box" type="text" id="" placeholder="電子信箱">
+                                    <input  class="text_box" type="password" id="" placeholder="密碼">
+                                    <div class="btn_group">
+                                    <input type="button" class="btn_box" id="signin" value="註冊">
+                                    <input type="button" class="btn_box" value="取消" onclick="location.href='index.html'">
+                                    </div>
+                            </form>
+                        </dd>
+                    </dl>
+            </div>
+            <!--登入時人頭換登出鍵 <button class="logout header"><a href=""><img  src="assets/img/log_out.jpg" alt style="width:100%;" ></a></button>-->
+            <!--登出實則跳回首頁-->
+                <input type="text" class="search_text" id="" placeholder="商品検索…">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="all">
+                <div id="slide">
+                    <ul>
+                        <li><img src="assets/img/cm1.jpg" alt="img1"></li>
+                        <li><img src="assets/img/cm2.jpg" alt="img2"></li>
+                        <li><img src="assets/img/cm3.jpg" alt="img3"></li>
+                        <li><img src="assets/img/cm4.jpg" alt="img4"></li>
+                    </ul>
+                    <button id="prevBtn"><img src="assets/img/prev.png" width="33" height="55" alt="Prev"></button>
+                    <button id="nextBtn"><img src="assets/img/next.png" width="33" height="55" alt="Next"></button>
+                </div>
+                <div class="zone" id="lotte">
+                    <p class="title">LOTTE<span class="title_jp">ロッテ</span></p>
+                    <div class="group">
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/koala_choco.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="樂天小熊餅(巧克力)" class="product_name"></p>
+                                <div class="product_price">$30</div>
+                                <div class="product_sold">已售出:24</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/koala_sberry.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="樂天小熊餅(草莓)" class="product_name"></p>
+                                <div class="product_price">$30</div>
+                                <div class="product_sold">已售出:24</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/koala_black.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="樂天小熊餅(濃黑巧)" class="product_name"></p>
+                                <div class="product_price">$30</div>
+                                <div class="product_sold">已售出:24</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/almond_crisp.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="脆心杏仁可可球" class="product_name"></p>
+                                <div class="product_price">$78</div>
+                                <div class="product_sold">已售出:24</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                    </div>
+                </div>        
+                <div class="zone" id="Glico">
+                    <p class="title">Glico<span class="title_jp">江崎グリコ</span></p>
+                    <div class="group">
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/pocky_macha.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="Pocky(抹茶)" class="product_name"></p>
+                                <div class="product_price">$29</div>
+                                <div class="product_sold">已售出:24</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/pocky_milk.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="Pocky(牛巧)" class="product_name"></p>
+                                <div class="product_price">$30</div>
+                                <div class="product_sold">已售出:24</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/pocky_sberry.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="Pocky(草莓)" class="product_name"></p>
+                                <div class="product_price">$59</div>
+                                <div class="product_sold">已售出:24</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/pocky_winter.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="Pocky(冬季)" class="product_name"></p>
+                                <div class="product_price">$69</div>
+                                <div class="product_sold">已售出:24</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="zone" id="Bourbon">
+                    <p class="title">Bourbon<span class="title_jp">ブルボン</span></p>
+                    <div class="group">
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/bourbon_milkchoco.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="帆船餅乾" class="product_name"></p>
+                                <div class="product_price">$49</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/fettu_lemon.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="檸檬味長條軟糖" class="product_name"></p>
+                                <div class="product_price">$49</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/fettu_peach.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="水蜜桃味長條軟糖" class="product_name"></p>
+                                <div class="product_price">$49</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/fettu_grape.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="葡萄味長條軟糖" class="product_name"></p>
+                                <div class="product_price">$49</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="zone" id="mikakutou">
+                    <p class="title">味覺糖<span class="title_jp">味覚糖</span></p>
+                    <div class="group">
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/tokunou_milk.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="特濃牛奶糖" class="product_name"></p>
+                                <div class="product_price">$55</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/tokunou_macha.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="特濃牛奶糖(抹茶)" class="product_name"></p>
+                                <div class="product_price">$59</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/puccho_fruit.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="普超軟糖(水果)" class="product_name"></p>
+                                <div class="product_price">$79</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/puccho_melon.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="普超條糖(哈密瓜蘇打)" class="product_name"></p>
+                                <div class="product_price">$55</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="zone" id="other">
+                    <p class="title">其它<span class="title_jp">他の</span></p>
+                    <div class="group">
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/calbee_nori.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="Calbee海苔鹽洋芋片" class="product_name"></p>
+                                <div class="product_price">$49</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/koike_nori.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="湖池屋海苔鹽洋芋片" class="product_name"></p>
+                                <div class="product_price">$59</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/nissin_cup.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="合味道XO海鮮杯麵" class="product_name"></p>
+                                <div class="product_price">$35</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/nissin_don.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="どん兵衛油豆烏龍" class="product_name"></p>
+                                <div class="product_price">$95</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/snow_plane.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="手撕起司棒(原味)" class="product_name"></p>
+                                <div class="product_price">$59</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/snow_smoke.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="手撕起司棒(煙燻)" class="product_name"></p>
+                                <div class="product_price">$35</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/yamae_cheese.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="燒鱈魚起司" class="product_name"></p>
+                                <div class="product_price">$95</div>
+                                <div class="product_sold">已售出:43</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                        <form method="" action="detail.html">
+                            <div class="area">
+                                <input type="image" src="assets/img/chokito_milk.jpg" class="product_pic">
+                                <p class="pn_p"><input type="submit" value="CHOKITO牛奶糖" class="product_name"></p>
+                                <div class="product_price">$65</div>
+                                <div class="product_sold">已售出:24</div>
+                                <input type="hidden" name="" value='' >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--購物車-->
+        <section>
+            <button class="cart_btn" id="cart_btn"><img src="assets/img/cart.png" class="btn_img"></button>
+            <div class="cart_show" id="cart_show">
+                <p class="cart_title">購物車</p><span id="cart_close">&times;</span>
+                <!--尚未登入會員時顥示-->
+                <!--<p class="cart_alert">尚未登入會員</p> -->
+                <form action="">
+                    <div class="wrap_orders">
+                        <div class="each_order">
+                            <div class="cart_img"><img src="assets/img/fettu_lemon.jpg"> </div>
+                            <div class="cart_info">
+                                <p>品名：檸檬味長條軟糖</p>
+                                <p>價錢：49 NT$</p>
+                                <p>數量：<input type="number"  value="2" min="1" max="" name="quantity" class="cart_num"></p>
+                                <p>小計：98 NT$</p>
+                                <form method="" action="">
+                                    <input type="submit" name="delete" class="del_btn" value="刪除">
+                                </form>
+                            </div>
+                            <hr class="cart_hr">
+                        </div>
+                        <div class="each_order">
+                            <div class="cart_img"><img src="assets/img/puccho_melon.jpg"> </div>
+                            <div class="cart_info">
+                                <p>品名：普超條糖(哈蜜瓜蘇打)</p>
+                                <p>價錢：55 NT$</p>
+                                <p>數量：<input type="number"  value="1" min="1" max="" name="quantity" class="cart_num"></p>
+                                <p>小計：55 NT$</p>
+                                <form method="" action="">
+                                    <input type="submit" name="delete" class="del_btn" value="刪除">
+                                </form>
+                            </div>
+                            <hr class="cart_hr">
+                        </div>
+                        <div class="cart_total">
+                            <span>總金額：153 NT$</span><span><input type="button" onclick="location.href='./order.html'" value="前往確認訂單頁面" class="to_check"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="last_container">
+            <div class="lastbox">
+                <div class="lastrow1">
+                    <img src="assets/img/logo.jpg" alt style="width: 100%;"> 
+                </div>
+                <div class="lastrow2">
+                    <img src="assets/img/logo1.jpg" alt style="width: 100%;">
+                </div>
+                <div class="lastrow3">
+                    <div class="foottitle">
+                        連絡先 .
+                    </div>
+                    <div class="footdetail">
+                        <a href="mailto:doris91010114@gmail.com?subject=我的建議">
+                            聯絡我們↗</a><br><br>
+                        <a href="./about.html">關於我們↗</a>
+                        <br><br>TEL:+886-3-218-8080
+                    </div>
+                </div>
+            </div>
+            <hr >
+            <div class="copyright">
+                Copyright©&nbsp;2022 CYIM Right.
+                <br>
+                網頁預覽人數:80人
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
