@@ -55,7 +55,6 @@ body{
     float: left;
     display: flex;
 }
-
 .self_word{
     margin-left: 150px;
     margin-top: 25px;
@@ -68,14 +67,16 @@ body{
     background:#da8e8ef8;
     opacity: 1;
     width: 340px;
-    height: 400px;
-    font-size: 25px;
+    height: 380px;  
     z-index: 2;
-    letter-spacing: 10px;
     display: none;
     border-radius: 0px 0px 8px 8px;
 }
-
+.swtp{
+    font-size: 25px;
+    letter-spacing: 5px;
+    line-height: 28px;
+}
 .self_txt:hover {
 	opacity: 1;
 }
